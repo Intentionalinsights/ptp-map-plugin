@@ -22,7 +22,7 @@ function ptpLatLongs() {
 
     foreach ($result as $row) {
         if ( $row->lng <> 0) {
-            $latLongs[] = ["lat" => (int) $row->lat, "lng" => (int) $row->lng];
+            $latLongs[] = ["lat" => round($row->lat,2), "lng" => round($row->lng,2)];
         }
     }
 
